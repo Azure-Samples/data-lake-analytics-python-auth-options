@@ -70,7 +70,7 @@ There are two ways to use interactive login:
 
 ## Authenticate interactively with a device code
 
-This option is used when you want to have a browser popup appear when the user signs in to your application, showing an AAD login form. From this interactive popup, your application will receive the tokens necessary to use the Data Lake Analytics .NET SDK on behalf of the user.
+This option is used when you want to have a browser popup appear when the user signs in to your application, showing an AAD login form. From this interactive popup, your application will receive the tokens necessary to use the Data Lake Analytics Python SDK on behalf of the user.
 
 This is not supported yet.
 
@@ -102,7 +102,7 @@ def authenticate_device_code():
 
 # Non-interactive - Service principal - Authentication
 
-Use this option if you want to have your application authenticate against AAD using its own credentials, rather than those of a user. Using this process, your application will receive the tokens necessary to use the Data Lake Analytics .NET SDK as a service principal, 
+Use this option if you want to have your application authenticate against AAD using its own credentials, rather than those of a user. Using this process, your application will receive the tokens necessary to use the Data Lake Analytics Python SDK as a service principal, 
 which represents your application in AAD.
 
 Non-interactive - Service principal / application
