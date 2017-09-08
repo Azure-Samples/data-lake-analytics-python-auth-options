@@ -1,3 +1,9 @@
+---
+services: data-lake-store,data-lake-analytics
+platforms: python
+author: matt1883
+---
+
 # Authenticating your Python application against Azure Active Directory
 
 ## Overview
