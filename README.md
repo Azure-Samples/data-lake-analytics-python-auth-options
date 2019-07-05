@@ -5,6 +5,7 @@ products:
 - azure
 - azure-active-directory
 topic: sample
+description: "When building an application with Python SDK for Data Lake Analytics, you need to pick how your application will sign in to Azure Active Directory."
 ---
 
 # Authenticating your Python application against Azure Active Directory
