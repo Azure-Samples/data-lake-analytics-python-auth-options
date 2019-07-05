@@ -3,6 +3,7 @@ languages:
 - python
 products:
 - azure
+- azure-active-directory
 topic: sample
 ---
 
