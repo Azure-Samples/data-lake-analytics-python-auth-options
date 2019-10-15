@@ -110,7 +110,7 @@ def authenticate_device_code():
 
 > NOTE: The client id used above is a well known that already exists for all azure services. While it makes the sample code easy to use, for production code you should use generate your own client ids for your application.
 
-# Non-interactive - Service principal - Authentication
+## Non-interactive - Service principal - Authentication
 
 Use this option if you want to have your application authenticate against AAD using its own credentials, rather than those of a user. Using this process, your application will receive the tokens necessary to use the Data Lake Analytics Python SDK as a service principal, 
 which represents your application in AAD.
@@ -119,10 +119,10 @@ Non-interactive - Service principal / application
  * Using a secret key
  * Using a certificate
 
-## Service principals
+### Service principals
 To create service principal [follow the steps in this article](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-authenticate-service-principal).
 
-## Authenticate non-interactively with a secret key
+### Authenticate non-interactively with a secret key
 
 ```python
 def authenticate_client_key():
@@ -143,7 +143,7 @@ def authenticate_client_key():
     return credentials
 ```
 
-## Authenticate non-interactively with a certificate
+### Authenticate non-interactively with a certificate
 
 ```python
 def authenticate_client_cert():
@@ -166,7 +166,7 @@ def authenticate_client_cert():
     return credentials
 ```
 
-## Setting up and using Data Lake SDKs
+### Setting up and using Data Lake SDKs
 Once your have followed one of the approaches for authentication, you're ready to set up your ADLA Python SDK client objects, which you'll use to perform various actions with the service. Remember to use the right tokens/credentials with the right clients: use the ADL credentials for data plane operations, and use the ARM credentials for resource- and account-related operations.
 
 You can then perform actions using the clients, like so:
@@ -198,7 +198,7 @@ You can then perform actions using the clients, like so:
     print('Job finished with result: ' + job_result.result.value)
 ```
 
-# Contributing
+## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
